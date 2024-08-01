@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conquer Students Registration and Inquiry DApp</title>
+  </head>
+  <body>
+    <h1>Conquer Students Registration and Inquiry DApp</h1>
+    <!-- Main header of the page -->
+
+    <div>
+      <button id="connectButton">Connect</button>
+      <!-- Button to connect MetaMask -->
+    </div>
+    <br />
+
+    <!-- Student Registration Form -->
+    <section>
+      <h2>Student Registration</h2>
+      <form id="registerForm">
+        <!-- Text field for student name -->
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Student Name"
+          required
+        />
+        <!-- Text field for student surname -->
+        <input
+          type="text"
+          id="studentSurname"
+          placeholder="Student Surname"
+          required
+        />
+        <!-- Number field for student age -->
+        <input
+          type="number"
+          id="studentAge"
+          placeholder="Student Age"
+          required
+        />
+        <!-- Button to submit the form and register the student -->
+        <button type="submit">Register Student</button>
+      </form>
+    </section>
+    <br />
+
+    <!-- Personal Data Inquiry of the Registered Student -->
+    <section>
+      <h2>Personal Data Inquiry</h2>
+      <button id="personalDataButton">Inquire My Data</button>
+      <div id="personalData"></div>
+    </section>
+    <br />
+
+    <!-- Inquiry of All Registered Students -->
+    <section>
+      <h2>Inquiry of All Students</h2>
+      <button id="allStudentsButton">Inquire All Students</button>
+      <div id="allStudents"></div>
+    </section>
+
+    <!-- Link to the JavaScript file containing the application logic -->
+    <script src="./ethers-5.6.esm.min.js" type="module"></script>
+    <script src="./constants.js" type="module"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
